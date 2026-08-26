@@ -14,6 +14,9 @@ COPY docker-files/mozilla.prefs /etc/apt/preferences.d/mozilla
 RUN apt-get update && apt-get install firefox -y
 RUN apt-get install npm -y
 RUN bundle config frozen false
+RUN npm install n -g
+RUN n latest
+COPY .pi/models.json ./.pi/agent
 
 WORKDIR /usr/src/app
 
