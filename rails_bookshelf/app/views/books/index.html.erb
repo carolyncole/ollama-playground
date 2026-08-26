@@ -1,0 +1,18 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Books" %>
+
+<h1>Welcome to the Bookshelf</h1>
+
+<div id="books">
+  <% @books.each do |book| %>
+    <div class="book">
+      <%= render book %>
+      <p>
+        <%= link_to "Show this book", book %>
+      </p>
+    </div>
+  <% end %>
+</div>
+
+<%= link_to "New book", new_book_path, class: "btn btn-primary" %>
