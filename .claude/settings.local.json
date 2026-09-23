@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//usr/src/app/**)",
+      "Bash(ruby -v)",
+      "Bash(gem list *)",
+      "Bash(bundle -v)",
+      "Read(//root/.claude/**)"
+    ]
+  }
+}
