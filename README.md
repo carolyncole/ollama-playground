@@ -22,6 +22,11 @@ docker exec -it ollama-playground npm install -g opencode-ai
 docker exec -it ollama-playground npm --force install -g --ignore-scripts @earendil-works/pi-coding-agent
 ```
 
+```
+docker exec -it ollama-playground source ../claud-install.sh
+```
+You will need to login to your account in a web browser when setting up claude
+
 ## Attach to the running container
 
 ```
@@ -41,5 +46,11 @@ opencode
 Ollama (local) is your machine
 
 ```
-opencode
+pi
+```
+
+## Run Claude
+
+```
+ docker exec -it ollama-playground /root/.local/bin/claude
 ```
