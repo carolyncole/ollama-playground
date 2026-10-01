@@ -1,0 +1,15 @@
+<%= form_for :book, form_path, method: form_method do |form| %>
+  <div>
+    <%= form.label :author, style: "display: block" %>
+    <%= form.text_field :author %>
+  </div>
+
+  <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.submit form_submit %>
+  </div>
+<% end %>

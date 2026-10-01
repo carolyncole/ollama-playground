@@ -1,0 +1,26 @@
+Rails -> Hanami conversion session prompts
+===========================================
+
+This is the sequence of user prompts given to Claude Code to drive the
+rails_bookshelf -> bookshelf (Hanami) conversion, using the rails-to-hanami
+skill. Recorded verbatim, in order.
+
+1. please use the rail-to-hanami skill to convert the bookshelf models
+   into a new hanami application named bookshelf
+
+2. please add rspec tests and yard docments to the hanami bookshelf
+
+3. please copy over the system spec from the rails application and
+   convert them into hanami syntax. They should run without error, but
+   not pass
+
+4. please copy over the views from the rails application and convert
+   them into hanami syntax.
+
+5. Please copy the css from the rails application
+
+6. Please build the actions and make the tests pass
+
+7. Please Add tests and yard docs for the actions
+
+8. Please export the conversation to conversion_prompt.txt
