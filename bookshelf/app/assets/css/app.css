@@ -1,0 +1,63 @@
+/*
+ * This is a manifest file that'll be compiled into application.css.
+ *
+ * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
+ * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
+ * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
+ * depending on specificity.
+ *
+ * Consider organizing styles into separate files for maintainability.
+ */
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.red-bar {
+    background-color: red;
+    height: 10px;
+    width: 100%;
+}
+.orange-bar {
+    background-color: orange;
+    height: 10px;
+    width: 100%;
+}
+.yellow-bar {
+    background-color: yellow;
+    height: 10px;
+    width: 100%;
+}
+.green-bar {
+    background-color: green;
+    height: 10px;
+    width: 100%;
+}
+.blue-bar {
+    background-color: #007BFF; /* Bootstrap's primary blue */
+    height: 10px;
+    width: 100%;
+}
+.purple-bar {
+    background-color: purple;
+    height: 10px;
+    width: 100%;
+}
+.book {
+    border: 1px solid red;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007BFF; /* Bootstrap's primary blue */
+    border-radius: 5px;
+    margin-bottom: 1em;
+}

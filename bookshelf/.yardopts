@@ -1,0 +1,7 @@
+--markup markdown
+--output-dir doc
+app/**/*.rb
+config/**/*.rb
+lib/**/*.rb
+-
+README.md
