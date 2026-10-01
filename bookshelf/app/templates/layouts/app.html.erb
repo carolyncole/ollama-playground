@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= content_for(:title) || "Bookshelf" %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <%# No hanami-assets/esbuild pipeline (this app was generated with
+        --skip-assets) — just a plain file at public/application.css,
+        ported from the Rails app and served via a Rack::Static mount in
+        config/app.rb. %>
+    <link rel="stylesheet" href="/application.css">
+  </head>
+
+  <body>
+    <div class="red-bar"></div>
+    <div class="orange-bar"></div>
+    <div class="yellow-bar"></div>
+    <div class="green-bar"></div>
+    <div class="blue-bar"></div>
+    <div class="purple-bar"></div>
+    <%= yield %>
+    <div class="red-bar"></div>
+    <div class="orange-bar"></div>
+    <div class="yellow-bar"></div>
+    <div class="green-bar"></div>
+    <div class="blue-bar"></div>
+    <div class="purple-bar"></div>
+  </body>
+</html>

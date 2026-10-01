@@ -1,0 +1,18 @@
+<% persisted = !book.id.nil? %>
+<form action="<%= persisted ? "/books/#{book.id}" : "/books" %>" method="post">
+  <% if persisted %><input type="hidden" name="_method" value="patch"><% end %>
+
+  <div>
+    <label for="book_author" style="display: block">Author</label>
+    <input type="text" name="book[author]" id="book_author" value="<%= book.author %>">
+  </div>
+
+  <div>
+    <label for="book_title" style="display: block">Title</label>
+    <input type="text" name="book[title]" id="book_title" value="<%= book.title %>">
+  </div>
+
+  <div>
+    <input type="submit" value="<%= persisted ? "Update Book" : "Create Book" %>">
+  </div>
+</form>

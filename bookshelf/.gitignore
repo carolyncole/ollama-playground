@@ -1,0 +1,6 @@
+.env*.local
+log/*
+db/*.sqlite
+spec/examples.txt
+/doc/
+/.yardoc/

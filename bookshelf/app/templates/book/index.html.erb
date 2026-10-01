@@ -1,0 +1,18 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Books" %>
+
+<h1>Welcome to the Bookshelf</h1>
+
+<div id="books">
+  <% books.each do |book| %>
+    <div class="book">
+      <%= render "book", book: book %>
+      <p>
+        <a href="/books/<%= book.id %>">Show this book</a>
+      </p>
+    </div>
+  <% end %>
+</div>
+
+<a href="/books/new" class="btn btn-primary">New book</a>
