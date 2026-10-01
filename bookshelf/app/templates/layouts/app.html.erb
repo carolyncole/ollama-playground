@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bookshelf</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Bookshelf">
+    <meta name="mobile-web-app-capable" content="yes">
+    <%= csrf_meta_tags&.html_safe %>
+
+    <%= favicon_tag %>
+
+    <%= stylesheet_tag "app", "data-turbo-track": "reload" %>
+  </head>
+
+  <body>
+    <div class="red-bar"></div>
+    <div class="orange-bar"></div>
+    <div class="yellow-bar"></div>
+    <div class="green-bar"></div>
+    <div class="blue-bar"></div>
+    <div class="purple-bar"></div>
+    <%= yield %>
+    <div class="red-bar"></div>
+    <div class="orange-bar"></div>
+    <div class="yellow-bar"></div>
+    <div class="green-bar"></div>
+    <div class="blue-bar"></div>
+    <div class="purple-bar"></div>
+  </body>
+</html>
