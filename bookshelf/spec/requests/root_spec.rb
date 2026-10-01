@@ -1,11 +1,10 @@
 # frozen_string_literal: true
 
 RSpec.describe "Root", type: :request do
-  it "is not found" do
+  it "renders the books index, same as Rails' `root 'books#index'`" do
     get "/"
 
-    # Generate new action via:
-    #   `bundle exec hanami generate action home.index --url=/`
-    expect(last_response.status).to be(404)
+    expect(last_response.status).to be(200)
+    expect(last_response.body).to include("Welcome to the Bookshelf")
   end
 end

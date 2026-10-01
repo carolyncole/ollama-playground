@@ -179,6 +179,13 @@ GEM
       concurrent-ruby (~> 1.0)
       dry-core (~> 1.0, < 2)
       dry-transformer (~> 1.0, < 2)
+    hanami-view (3.0.2)
+      dry-configurable (~> 1.4)
+      dry-core (~> 1.0)
+      dry-inflector (~> 1.0, < 2)
+      temple (~> 0.10.0, >= 0.10.2)
+      tilt (~> 2.3)
+      zeitwerk (~> 2.6)
     hanami-webconsole (3.0.0)
       better_errors (~> 2.10, >= 2.10.1)
       binding_of_caller (~> 2.0)
@@ -318,11 +325,14 @@ GEM
     sqlite3 (2.9.6-x86_64-linux-gnu)
     sqlite3 (2.9.6-x86_64-linux-musl)
     strscan (3.1.8)
+    temple (0.10.7)
     thor (1.5.0)
+    tilt (2.9.0)
     transproc (1.1.1)
     tsort (0.2.0)
     xpath (3.2.0)
       nokogiri (~> 1.8)
+    yard (0.9.45)
     zeitwerk (2.8.3)
 
 PLATFORMS
@@ -350,6 +360,7 @@ DEPENDENCIES
   hanami-reloader (~> 3.0.0)
   hanami-router (~> 3.0.0)
   hanami-rspec (~> 3.0.0)
+  hanami-view (~> 3.0.0)
   hanami-webconsole (~> 3.0.0)
   i18n (~> 1.14)
   puma (>= 7.1)
@@ -357,6 +368,7 @@ DEPENDENCIES
   rake
   rouge
   sqlite3
+  yard
 
 CHECKSUMS
   addressable (2.9.0) sha256=7fdf6ac3660f7f4e867a0838be3f6cf722ace541dd97767fa42bc6cfa980c7af
@@ -416,6 +428,7 @@ CHECKSUMS
   hanami-router (3.0.0) sha256=2438db070c7ed7d3f28f1777fc32bdc86e7a9b744a29ab51098f4fa41408210b
   hanami-rspec (3.0.0) sha256=14d3ffb2dd4b5a028007ddf5442028c3d05ea8126c95def1cd83c23fd3c82ee7
   hanami-utils (3.0.1) sha256=0d46181bd86115127a04a6d0481df819eb558714ce58c6b4da7e0bb65c5dcd9b
+  hanami-view (3.0.2) sha256=b145c23a720e76b05f178ef087340ffe27ea00495ec4d4a53bd1bd391fbb0592
   hanami-webconsole (3.0.0) sha256=5d8f46e1e2783e03403c58500cbad6274e2022cbc60867a7354442e6b60c2bdd
   i18n (1.15.2) sha256=00f9eb62412fe593b2a65a97daa75300d37abb8f7202ec748e94b6d46a9dd1b5
   ice_nine (0.11.2) sha256=5d506a7d2723d5592dc121b9928e4931742730131f22a1a37649df1c1e2e63db
@@ -484,10 +497,13 @@ CHECKSUMS
   sqlite3 (2.9.6-x86_64-linux-gnu) sha256=613188ce02f614126ddbc38c5e217ccffd6306d0dcd9adca9764547aa890a634
   sqlite3 (2.9.6-x86_64-linux-musl) sha256=d493b11818a3573387a1d56e1ee8fa00da23a683a7a1cc063e7a0feeed843abf
   strscan (3.1.8) sha256=aae2db611a225559f21ffbb71765c9a4e60fd262534a9ea84f4f11c7f32f679e
+  temple (0.10.7) sha256=369fe560adb6534674ce232899c2232df614bcb29c5359b05efedff7a57ed9c0
   thor (1.5.0) sha256=e3a9e55fe857e44859ce104a84675ab6e8cd59c650a49106a05f55f136425e73
+  tilt (2.9.0) sha256=da5735d0280bba96e9a91041bb14aee435ccad5c17b0fa519249ae543d9aa3a5
   transproc (1.1.1) sha256=b2f9a85ecaf7064f0b3893ffac929de9fd713b13f5aaf822b0bd091fd6f5c8c2
   tsort (0.2.0) sha256=9650a793f6859a43b6641671278f79cfead60ac714148aabe4e3f0060480089f
   xpath (3.2.0) sha256=6dfda79d91bb3b949b947ecc5919f042ef2f399b904013eb3ef6d20dd3a4082e
+  yard (0.9.45) sha256=52e211493f7cb8a3ebf7e104a25a1e73937a3103092545d34cb88fafebb3dc51
   zeitwerk (2.8.3) sha256=2c85125a8467ce069e20123d1e709a08955c9d29c118c25b46b7b7fafdbb92e5
 
 BUNDLED WITH

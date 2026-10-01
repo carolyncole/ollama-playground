@@ -1,0 +1,13 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render "book", book: book %>
+
+<div>
+  <a href="/books/<%= book.id %>/edit">Edit this book</a> |
+  <a href="/books">Back to books</a>
+
+  <form action="/books/<%= book.id %>" method="post" style="display: inline">
+    <input type="hidden" name="_method" value="delete">
+    <button type="submit">Destroy this book</button>
+  </form>
+</div>

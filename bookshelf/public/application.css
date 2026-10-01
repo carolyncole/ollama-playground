@@ -1,0 +1,58 @@
+/* Copied from the Rails app's app/assets/stylesheets/application.css.
+ * No asset pipeline is wired up yet (this app was generated with
+ * --skip-assets, and static file serving isn't configured) — this file
+ * won't actually be served until that layer is ported. See the
+ * rails-to-hanami skill. */
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.red-bar {
+    background-color: red;
+    height: 10px;
+    width: 100%;
+}
+.orange-bar {
+    background-color: orange;
+    height: 10px;
+    width: 100%;
+}
+.yellow-bar {
+    background-color: yellow;
+    height: 10px;
+    width: 100%;
+}
+.green-bar {
+    background-color: green;
+    height: 10px;
+    width: 100%;
+}
+.blue-bar {
+    background-color: #007BFF; /* Bootstrap's primary blue */
+    height: 10px;
+    width: 100%;
+}
+.purple-bar {
+    background-color: purple;
+    height: 10px;
+    width: 100%;
+}
+.book {
+    border: 1px solid red;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007BFF; /* Bootstrap's primary blue */
+    border-radius: 5px;
+    margin-bottom: 1em;
+}

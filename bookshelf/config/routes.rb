@@ -2,6 +2,14 @@
 
 module Bookshelf
   class Routes < Hanami::Routes
-    # Add your routes here. See https://hanakai.org/learn/hanami/routing/ for details.
+    root to: "book.index"
+
+    get "/books", to: "book.index"
+    get "/books/new", to: "book.new"
+    post "/books", to: "book.create"
+    get "/books/:id", to: "book.show"
+    get "/books/:id/edit", to: "book.edit"
+    patch "/books/:id", to: "book.update"
+    delete "/books/:id", to: "book.destroy"
   end
 end
