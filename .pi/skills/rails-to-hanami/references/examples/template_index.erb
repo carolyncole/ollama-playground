@@ -1,0 +1,13 @@
+<%# app/templates/books/index.html.erb %>
+<% # Rails original: loop over @books, render partial, link to new_book_path %>
+<h1>Welcome to the Bookshelf</h1>
+
+<% books.map do |book| %>
+  <div class="book">
+     <p><strong>Author:</strong> <%= book.author %></p>
+     <p><strong>Title:</strong>  <%= book.title %></p>
+     <p><%= link_to "Show", routes.book(id: book.id) %></p>
+   </div>
+<% end %>
+
+<%= link_to "New book", routes.new_book, class: "btn btn-primary" %>
